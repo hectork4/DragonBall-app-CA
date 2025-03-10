@@ -41,7 +41,7 @@ Para comenzar con el proyecto, sigue estos pasos:
    Clona el repositorio en tu máquina local:
 
    ```bash
-   git clone https://github.com/hectork4/dragon-ball-app.git
+   git clone https://github.com/hectork4/DragonBall-app-CA.git
    ```
 
 2. **Instalar las dependencias**:
@@ -51,8 +51,6 @@ Instala las dependencias del proyecto usando npm:
 ```bash
 npm install
 ```
-
-El servidor estará disponible en http://localhost:5173 por defecto.
 
 ## Scripts Disponibles
 
