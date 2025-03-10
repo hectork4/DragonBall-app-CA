@@ -1,0 +1,21 @@
+.fav-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 32px;
+}
+
+.fav-button:hover {
+  background: none;
+}
+
+.fav-button:focus-visible,
+.fav-button:focus {
+  outline: none;
+}
+
+.fav-button span {
+  display: block;
+  width: 20px;
+  color: white;
+}

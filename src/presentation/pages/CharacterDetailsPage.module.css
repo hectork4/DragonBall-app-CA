@@ -1,0 +1,125 @@
+.transformation-wrapper {
+  color: black;
+  overflow: hidden;
+  position: relative;
+  padding: 0 20%;
+}
+
+.single-character-wrapper {
+  min-height: 320px;
+  display: flex;
+  background-color: black;
+  padding: 0 20%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 30px),
+    calc(100% - 30px) 100%,
+    0 100%
+  );
+}
+
+.character-desc {
+  margin-left: 90px;
+  text-align: justify;
+  color: white;
+}
+
+.character-image img {
+  height: 320px;
+}
+
+.character-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+}
+
+.transformations-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  scrollbar-color: #ff0000de #88888857;
+}
+
+.transformations {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  width: 180px;
+  margin-right: 16px;
+}
+
+.transformations > div {
+  background-color: floralwhite;
+}
+
+.transformations p {
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+.transformations .img-wrapper {
+  text-align: center;
+  background-color: floralwhite;
+}
+
+.transformations img {
+  width: 188px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  vertical-align: top;
+}
+
+.transformation-title {
+  font-weight: 600;
+}
+
+.transformation-title + p {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+@media (max-width: 800px) {
+  .single-character-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .character-image {
+    align-self: center;
+  }
+
+  .character-image img {
+    height: 400px;
+    object-fit: cover;
+  }
+
+  .character-desc {
+    margin-left: 0;
+    padding: 0 30px 30px 30px;
+  }
+
+  .character-title h3 {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 1251px) {
+  .single-character-wrapper {
+    padding: 0 10px;
+  }
+  .character-image {
+    align-content: center;
+  }
+  .transformation-wrapper {
+    padding: 0 0 0 30px;
+  }
+}
